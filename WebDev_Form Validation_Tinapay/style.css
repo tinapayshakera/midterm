@@ -1,0 +1,23 @@
+* {
+  padding: 0%;
+  justify-items: auto;
+  margin: auto;
+  -ms-flex-line-pack: justify;
+}
+body {
+  background-image: url(house.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .nav-link {
+  color: aqua;
+  margin-left: 50px;
+  margin-top: 50px;
+  -webkit-text-stroke-width: 1px;
+  font-size: 40px;
+}
+.container-fluid {
+  -webkit-text-stroke-width: 1px;
+  font-size: 40px;
+  margin-top: 250px;
+}

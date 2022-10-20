@@ -1,0 +1,16 @@
+* {
+    padding: 0%;
+    justify-items: auto;
+    margin: auto;
+    -ms-flex-line-pack: justify;
+  }
+  body {
+    background-image: url(christ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-fluid h1{
+    text-align: center;
+    color: yellowgreen;
+    padding-top: 50px;
+  }
