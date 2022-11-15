@@ -4,8 +4,7 @@ class Flower {
 	private String aroma;
 	private int digit;
 
-	public Flower() {
-	};
+	
 
 	public Flower(String name, String color, String aroma, int digit) {
 		this.name = name;
@@ -46,4 +45,3 @@ class Flower {
 	}
 
 }
-
