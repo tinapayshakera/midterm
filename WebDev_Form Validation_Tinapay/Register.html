@@ -25,63 +25,72 @@
             crossorigin="anonymous"></script>
         <title>Document</title>
     </head>
-    <body>
-        <nav class="container1">
-            <a class="nav-link" href="index.html">Home</a>
-        </nav>
-        <div class="container-fluid">
-            <a style="color: skyblue; text-decoration: none; margin-left: 290px;
-                margin-inline-start: 100px;" href="Register.html">Register</a>
-        </div>
-        <div class="container">
-            <form name="myForm" onsubmit="return validateForm()" method="post"
-                class="" id="registrationForm">
+    <body style="background-color: rgb(211, 231, 190);">
+
+
+        <div class="container" style="width: 500px; justify-items: center;">
+            <form name="myForm" onsubmit="return validateForm()" 
+                class="form" id="registrationForm"  >
+                <h1 style="text-align: center;">Register</h1>
                 <div class="form-group">
-                    <label for="fname">Name</label>
+                    <label for="fname">Firstname</label>
                     <input type="text" class="form-control alphabat-only"
-                        name="fname" id="fname" aria-describedby="emailHelp"
-                        placeholder="Enter your firstname!" maxlength="60">
+                        name="fname" id="fname" maxlength="60"
+                        required>
                     <div class="invalid-feedback">*Please enter your Firstname.</div>
                 </div>
                 <div class="form-group">
-                    <label for="fname1">Name</label>
+                    <label for="lname">Lastname</label>
                     <input type="text" class="form-control alphabat-only"
-                        name="fname1" id="fname1" aria-describedby="emailHelp"
-                        placeholder="Enter your lastname!" maxlength="60">
+                        name="lname" id="Lname" maxlength="60"
+                        required>
                     <div class="invalid-feedback">*Please enter your Lastname.</div>
                 </div>
                 <div class="form-group">
                     <label for="email">Enter e-mail address</label>
                     <input type="email" class="form-control" name="email"
-                        id="email" aria-describedby="emailHelp"
-                        placeholder="Enter your email" maxlength="64">
+                        id="Email" maxlength="64"
+                        required>
                     <div class="invalid-feedback">*Please enter your valid
                         email.</div>
                 </div>
-                
+                <div class="form-group">
+                    <label for="text">Enter Birthdate</label>
+                    <input type="text" id="txtDate" class="form-control"
+                        onblur="ValidateDOB()"
+                        />
+                    <span class="error" id="lblError" style="color: red;"></span>
+                </div>
                 <div class="form-group">
                     <label for="mobile">Phone Number</label>
                     <input type="text" class="form-control numbers-only"
-                        name="mobile" id="mobile" aria-describedby="emailHelp"
-                        placeholder="Enter your phone number!" maxlength="11">
+                        name="mobile" id="Mobile" maxlength="11"
+                        required>
                     <div class="invalid-feedback">*Please enter your mobile
                         number.</div>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password"
-                        placeholder="Please enter password" maxlength="20">
-                    <div class="invalid-feedback">*Please enter password.</div>
+
+                    <label for="psw">Password</label>
+                    <input type="password" id="psw" name="psw"
+                        class="form-control"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one
+                        uppercase and lowercase letter, and at least 8 or more
+                        characters" required>
+                    <div class="btn-form" >
+                        <tr>
+                            <td><input type="submit" value="REGISTER"
+                                    onclick="return
+                                    validateForm()" id="btnSubmit">&nbsp;
+                                <input type="reset" value="CLEAR" id="btnReset"></td>
+                            <dialog id="myDialog">Successfully Registered! Thank
+                                you!</dialog>
+                        </tr>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="cpassword">Comfirm Password</label>
-                    <input type="password" class="form-control" id="cpassword"
-                        placeholder="Please enter password">
-                    <div class="invalid-feedback">*Please enter comfirm
-                        password.</div>
-                </div>
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
             </form>
         </div>
+
     </body>
 </html>
