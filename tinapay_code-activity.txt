@@ -1,0 +1,59 @@
+Person.java
+
+public class Person
+
+private String name;
+private int age;
+
+public Person
+
+
+
+
+
+
+
+
+
+PesonException
+public class PersonException extends{
+
+}
+
+
+
+
+
+
+Main.java
+
+public class Main{
+
+public static void main(String[]agrs){
+Scanner sc = new Scanner(System.in);
+System.out.println(x: "How many objects do you want to create?");
+int numObj = sc.nextInt();
+
+List<Person> personArray = new ArrayList<Person>();
+
+for(int i = 0; i < numObj; i ++){
+System.out.println(x:"What's the person's name?");
+String name = sc.nextLine();
+int age = 0;
+
+try {
+System.out.println(x: "What's the person's age?");
+age = sc.nextInt();
+if (age < 0){
+throw new PersonException();
+}
+Person persons = new Person (name, age);
+personArray.add(persons);
+
+}catch (PersonException e){
+System.out.println(x: "negatives are not allowed!!");
+}
+
+}
+}
+}
