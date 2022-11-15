@@ -1,0 +1,133 @@
+body {
+    width: 230mm;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 12pt;
+    background-image: url(techo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+   
+  }
+  .main-page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 10mm auto;
+    background-color: white;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  .sub-page {
+    padding: 1cm;
+    height: 297mm;
+  }
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  @media print {
+    html, body {
+      width: 210mm;
+      height: 297mm;        
+    }
+    .main-page {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      width: initial;
+      min-height: initial;
+      box-shadow: initial;
+      background: initial;
+      page-break-after: always;
+    }
+  }
+ .right-page{
+  padding: 30px;
+  width: 300px;
+  height: 1122.6px;
+  margin-top: -37.8px;
+  background-color: rgb(111, 237, 246);
+  margin-left: -67.8px;
+  position: relative;
+  display: inline-block;
+ }
+ .right-page img{
+  float: left;
+  border: 2px solid black;
+  width: 125%;
+  margin: 1.66%;
+  margin-left: -30px;
+  margin-top: -30px;
+ }
+ .skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+.skill-per{
+  height: 14px;
+  background: #2543f1;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+.left-page {
+  margin-left: 260px;
+  position:relative;
+  justify-items: auto;
+}
+.left-page .txt{
+  margin-top: -1100px;
+}
+p{
+  font-family:  sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
