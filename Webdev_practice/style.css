@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+  margin: auto;
+  justify-content: center;
+  justify-items: auto;
+
+}
+body {
+  height: 10px;
+  background-image: url(webdev.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.txt p {
+  color: white;
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: large;
+  padding-top: 30px;
+}
+.wrapper {
+  position: absolute;
+  top: 80px;
+  left: -65px;
+  transform: translate(-50px, -50px);
+}
+
+.btn {
+  text-align: center;
+  width: 440px;
+  margin-bottom: 10px;
+}
+
+.btn .fa {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form {
+  width: 440px;
+  height: 100px;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 300px;
+  border: 0px;
+  margin-left: 50px;
+  background: transparent;
+  box-sizing: border-box;
+  border-bottom: 3px solid #62d474;
+  outline: none;
+  padding: 0 20px 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s ease;
+  transform: scale(0);
+}
+
+#search {
+  color: #fff;
+  position: relative;
+  top: 18px;
+  left: 90px;
+  opacity: 0;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+#search.active {
+  opacity: 1;
+}
+
+.input.active {
+  transform: scale(1);
+}
+
+#search.move {
+  top: 60px;
+  left: 60px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 640px) {
+  .btn,
+  .form {
+    width: 300px;
+  }
+  .input {
+    width: 260px;
+  }
+  #search {
+    left: 30px;
+    font-size: 14px;
+  }
+}
+.date p {
+  color: white;
+  margin-top: -25px;
+  float: right; 
+}
+.digital-clock{
+font-size: 80px;
+margin-top: 200px;
+}
+.message{
+color: white;
+margin-top: 20px;
+font-family: 'Poppins';
+}
+.last{
+  color: white;
+  float: right;
+  margin-top: 145px;
+}
+.place{
+  color: white;
+  margin-left: 20px;
+  margin-top: -18px;
+}
